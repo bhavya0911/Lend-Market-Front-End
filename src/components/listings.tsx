@@ -36,16 +36,16 @@ const Listing: NextComponentType = () => {
     const [writeNow, setWrite] = useState(false);
     const [signature, setSignature] = useState<string | undefined>(undefined);
 
-    useWriteContract({
-      abi,
-      address,
-      functionName: 'accept',
-      args: [
-        list,
-        signature,
-      ],
-      enable: writeNow,
-    });
+    // useWriteContract({
+    //   abi,
+    //   address,
+    //   functionName: 'accept',
+    //   args: [
+    //     list,
+    //     signature,
+    //   ],
+    //   enable: writeNow,
+    // });
 
     useEffect(() => {
         async function fetchData() {
