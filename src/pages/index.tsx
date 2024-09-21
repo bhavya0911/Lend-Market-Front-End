@@ -28,7 +28,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        {logged && <ConnectButton label='Sign In' />}
+        {!logged && <ConnectButton label='Sign In' />}
         {logged && 
         <div>
           <button><Link href="/new">New</Link></button>
